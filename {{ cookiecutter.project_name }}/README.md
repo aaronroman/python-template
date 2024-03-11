@@ -34,7 +34,7 @@ It is recommended to install a virtual environment using the venv library to avo
         }
     
     example:
-        python {{cookiecutter.project_name}}/main.py add-client --name Peter --email peter@test.com --age 32 --enable 1
+        python {{cookiecutter.project_name}}/main.py add-client --name Peter --email peter@test.com --age 32 --country ES
 
     ```
 - Get client
