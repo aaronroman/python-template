@@ -1,21 +1,22 @@
 # {{cookiecutter.project_name}}
 
 ## Description
-Small project for the creation of a client and its subsequent query. A small in-memory storage system has been created for managing clients. The use of data validation with pydantic, the use of logging, and the use of tests will be valued. As well as the project's structure and its documentation.
+Project for client creation and management, featuring a compact storage system. Emphasis on data validation, logging, and testing is appreciated, alongside the project's organization and documentation.
 
 ## Development
-It is recommended to install a virtual environment using the venv library to avoid conflicts with project dependencies. As it is a Python package, it is necessary to install it in development mode to be able to execute it from the console. With the command pip install -e ., the package will be installed in development mode. It can be executed from the console with the command python {{cookiecutter.project_name}}/main.py.
+To prevent dependency conflicts, installing a virtual environment via the `venv` library is advisable. Being a Python package, installation in development mode is required for console execution. Use the command pip install -e . to install the package in development mode, allowing it to be executed from the console using python `{{cookiecutter.project_name}}/main.py`.
 
 ## Rubric
 - Utilize `TinyDB` to create a database for client storage.
 - The `pydantic` package has been used for data validation.
 - The `loguru` logging package has been used for log recording.
 - The `pytest` package has been used for the creation of tests.
-- The project has a clear, modular structure and is well documented.
-- A `Docker` image of the project should be generated using a Dockerfile where the entrypoint is the project's main script.
+- A Docker image of the project should be generated using a `Dockerfile` where the entrypoint is the project's main script.
 - For `pyarrow` dump, it is recommended to use a schema to avoid problems with data types.
+- The project has a clear, modular structure and is well documented.
 
-## Specifications
+
+## Methods specifications
 - Add client
     ```
     params:
