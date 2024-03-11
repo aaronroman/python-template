@@ -1,2 +1,2 @@
 ## Python template
-This is a Python template for a small project for the creation of a client and its subsequent query. 
+Cookiecutter template for a Python package used by the Data Science team at [Danelfin](https://www.danelfin.com/).
