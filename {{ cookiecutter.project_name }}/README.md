@@ -1,10 +1,10 @@
 # {{cookiecutter.project_name}}
 
 ## Description
-Project for client creation and management, featuring a compact storage system. Emphasis on data validation, logging, and testing is appreciated, alongside the project's organization and documentation.
+Project for Managing and Adding Customers. This project has an easy-to-use storage system. It checks data carefully, records details, and tests everything well. Everything is neatly arranged and easy to understand. It also focuses on managing errors well. Plus, the project uses Docker to keep everything running smoothly in its own container
 
 ## Development
-To prevent dependency conflicts, installing a virtual environment via the `venv` library is advisable. Being a Python package, installation in development mode is required for console execution. Use the command pip install -e . to install the package in development mode, allowing it to be executed from the console using python `{{cookiecutter.project_name}}/main.py`.
+To prevent dependency conflicts, installing a virtual environment via the `venv` library is advisable. Being a Python package, installation in development mode is required for console execution. Use the command `pip install -e .` to install the package in development mode, allowing it to be executed from the console using `python {{cookiecutter.project_name}}/main.py`.
 
 ## Rubric
 - Utilize `TinyDB` to create a database for client storage.
@@ -17,11 +17,11 @@ To prevent dependency conflicts, installing a virtual environment via the `venv`
 
 
 ## Methods specifications
-- Add client
+- Add customer
     ```
     params:
         --name <string>
-        --email <string>
+        --email <string> check for valid email
         --age <int>
         --country <str>
 
@@ -35,10 +35,10 @@ To prevent dependency conflicts, installing a virtual environment via the `venv`
         }
     
     example:
-        python {{cookiecutter.project_name}}/main.py add-client --name Peter --email peter@test.com --age 32 --country ES
+        python {{cookiecutter.project_name}}/main.py add-customer --name Peter --email peter@test.com --age 32 --country ES
 
     ```
-- Get client
+- Get customer
     ```
     params:
         --id <int>
@@ -59,7 +59,7 @@ To prevent dependency conflicts, installing a virtual environment via the `venv`
 - Dump clients
     ```
         output:
-            .parquet file with all the clients, partitioned by country
+            .parquet file with all the customers, partitioned by country
         
         example:
             python {{cookiecutter.project_name}}/main.py dump
